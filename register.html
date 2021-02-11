@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+        div nav{
+            float:left;            
+            margin:5px;
+            display: block;
+            border:solid 2px red;
+            height: 250px;
+            background-color: aqua;
+        }
+        div section{
+            margin:5px;            
+            background-color: gray;
+            border:solid 2px red;
+            height: 250px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This demo of Header</h1>
+    </header>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <form id="form1" action="doRegister" >
+                <pre>
+                <label>Name</label><input type="text" id="name" name="name"  required/> <br/>
+                <label>Emp NO</label><input type="number" min="1" id="empNo" name="empNo" required/><br/>
+                <label>DOJ</label><input type="date" id="doj" name="doj" required/>       <br/>
+                <label>email</label><input type="email" id="emailid" name="emailid" required/>   <br/>
+                <label>Years of Experience</label><input type="range" id="noofyears" name="noofyears" min="1" max="5" required/>   <br/>
+                <label>Telephone</label><input type="tel" id="mobNo"  name="mobNo" required/>   <br/>
+                <input type="submit" value="Submit"/>
+                </pre>
+                </form>
+       
+        </section>
+
+    </div>
+
+    <footer>
+        <h6>&copy;of Mastek2020</h6>
+    </footer>
+</body>
+</html>
